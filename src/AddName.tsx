@@ -20,7 +20,13 @@ const AddName: React.FC = () => {
     <div className="addname">
       <h1>Add Your Name Here</h1>
       <form onSubmit={handlesubmit} className="form">
-        <input type="text" name="name" className="input" ref={inputref} />
+        <input
+          type="text"
+          name="name"
+          placeholder="Type Your name here"
+          className="input"
+          ref={inputref}
+        />
         <button className="btn">Add</button>
       </form>
     </div>
