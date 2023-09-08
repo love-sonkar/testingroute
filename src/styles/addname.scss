@@ -1,0 +1,25 @@
+.addname {
+  .form {
+    display: flex;
+    .input {
+      flex: 0.9;
+      padding: 10px;
+      font-size: 1.3rem;
+    }
+    .btn {
+      flex: 0.1;
+      padding: 10px;
+      cursor: pointer;
+      background: blue;
+      color: white;
+      border: none;
+      transition: 0.4s ease-in;
+      border: 1px solid blue;
+
+      &:hover {
+        background: none;
+        color: black;
+      }
+    }
+  }
+}

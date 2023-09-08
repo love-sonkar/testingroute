@@ -1,0 +1,17 @@
+.app {
+  header {
+    padding: 10px 20px;
+    background: blue;
+    .logo {
+      font-size: 1.4rem;
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}

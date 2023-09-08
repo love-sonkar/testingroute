@@ -1,0 +1,32 @@
+.datashow {
+  text-align: center;
+  overflow: hidden;
+  padding: 40px 10px;
+  .heading_name {
+    animation: headinganimate ease-in-out 1s infinite;
+    padding: 30px;
+  }
+  .animate {
+    font-size: 1.8rem;
+    animation: rightleftanimate 15s ease-in-out infinite;
+  }
+
+  @keyframes headinganimate {
+    0%,
+    100% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+  }
+
+  @keyframes rightleftanimate {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
