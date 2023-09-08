@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import "./styles/datashow.scss";
+import { WhatsappIcon, WhatsappShareButton } from "react-share";
 
 type ParamType = {
   param: string;
@@ -17,6 +18,9 @@ const DataShow: React.FC = () => {
       <h1 className="heading_name">{username}</h1>
       <h2 className="animate">{username} ki taraf se..</h2>
       <h3>Happy Krishna Janmastami</h3>
+      <WhatsappShareButton url={window.location.href}>
+        <WhatsappIcon round={true} />
+      </WhatsappShareButton>
       <Link to="/">want your click here</Link>
     </div>
   );
